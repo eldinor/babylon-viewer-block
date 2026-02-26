@@ -1,0 +1,95 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "babylon/viewer-block",
+  "version": "0.1.0",
+  "title": "Babylon.js Viewer Block",
+  "category": "media",
+  "icon": "format-video",
+  "description": "Embed interactive 3D models using the Babylon.js Viewer web component.",
+  "example": {
+    "attributes": {
+      "modelUrl": "https://playground.babylonjs.com/scenes/BoomBox.glb",
+      "height": 400
+    }
+  },
+  "attributes": {
+    "modelUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "height": {
+      "type": "number",
+      "default": 400
+    },
+    "autoRotate": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoRotateSpeed": {
+      "type": "number",
+      "default": 1
+    },
+    "cameraRadius": {
+      "type": "number",
+      "default": 0
+    },
+    "cameraFieldOfView": {
+      "type": "number",
+      "default": 0
+    },
+    "environmentIntensity": {
+      "type": "number",
+      "default": 1
+    },
+    "toneMapping": {
+      "type": "string",
+      "default": "neutral"
+    },
+    "contrast": {
+      "type": "number",
+      "default": 1
+    },
+    "exposure": {
+      "type": "number",
+      "default": 1
+    },
+    "playAnimation": {
+      "type": "boolean",
+      "default": true
+    },
+    "animationSpeed": {
+      "type": "number",
+      "default": 1
+    },
+    "showGroundShadow": {
+      "type": "boolean",
+      "default": false
+    },
+    "clearColor": {
+      "type": "string",
+      "default": ""
+    },
+    "skyboxBlur": {
+      "type": "number",
+      "default": 0.3
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "textdomain": "babylon-viewer-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

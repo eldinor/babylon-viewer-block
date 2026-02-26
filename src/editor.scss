@@ -1,0 +1,14 @@
+
+.wp-block-babylon-viewer-block {
+	position: relative;
+
+	.components-placeholder {
+		min-height: 250px;
+	}
+
+	iframe {
+		pointer-events: auto;
+		background-color: #1a1a2e;
+	}
+}
+	
