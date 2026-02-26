@@ -1,7 +1,7 @@
 
 === Babylon.js Viewer Block ===
 
-Contributors:      WordPress Telex
+Contributors:      BaabylonPress
 Tags:              block, 3d, babylon, viewer, model
 Tested up to:      6.8
 Stable tag:        0.1.0
